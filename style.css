@@ -167,3 +167,38 @@ main {
 }
 
 .hidden { display: none; }
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .btn--new {
+    top: 1rem;
+  }
+  .btn--roll {
+    top: 48rem;
+  }
+  .btn--hold {
+    top: 54rem;
+  }
+  .player {
+    padding: 8rem 3rem 14rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body { height: auto; }
+  main { flex-direction: column; height: auto; }
+  .dice { 
+    top: 48%;
+    transform: translate(-50%, -50%);
+  }
+  .btn--new { width: 70%; }
+  .btn--roll {
+    top: 39.5rem;
+  }
+  .btn--hold {
+    top: 58rem;
+  }
+  .player.player--1 {
+    padding: 12rem 3rem 14rem;
+  }
+}
